@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>weather</title>
+  <title>Weather App</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -17,7 +17,7 @@
 
 <body>
   <nav class="row" style="background: green; color: white;">
-    <h1 class="col-md-3 text-center">weather</h1>
+    <h1 class="col-md-3 text-center">Weather App</h1>
   </nav>
   <br />
   <br />
@@ -37,6 +37,7 @@
     {% if country_code and lon and lan and temp and pressure and humidity %}
     <div class="col-md-6 col-md-offset-3">
       <h3>Country Code : {{country_code}}</h1>
+      <h3>City : {{name}}</h1>
         <h5>Longitude : {{lon}}</h5>
         <h5>Latitude : {{lan}}</h5>
         <h5>Temperature : {{temp}}</h5>

@@ -21,6 +21,7 @@ def index(request):
         # data for variable list_of_data
         data = {
             "country_code": str(list_of_data['sys']['country']),
+            "name": str(list_of_data['name']),
             "lon": str(list_of_data['coord']['lon']),
             "lan": str(list_of_data['coord']['lat']),
             "temp": str(list_of_data['main']['temp']) + 'k',
